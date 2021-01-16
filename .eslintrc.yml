@@ -16,4 +16,3 @@ rules:
   import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version
   no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
   no-await-in-loop: 0
-  semi: 0
