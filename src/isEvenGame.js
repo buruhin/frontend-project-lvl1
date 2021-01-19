@@ -6,7 +6,7 @@ const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 export default () => {
   console.log('Welcome to the Brain Games!');
   const username = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${username}!!!`);
+  console.log(`Hello, ${username}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let counter = 0;
   while (counter < 3) {
