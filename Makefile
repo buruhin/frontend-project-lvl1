@@ -7,6 +7,9 @@ brain-games: # запуск утилиты
 brain-even: # запуск утилиты
 		node bin/brain-even.js
 
+brain-calc: # запуск утилиты
+		node bin/brain-calc.js
+
 publish:  # тестирование публикации пакета
 		npm publish --dry-run
 

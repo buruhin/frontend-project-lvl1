@@ -5,4 +5,3 @@
 [![node-ci](https://github.com/buruhin/frontend-project-lvl1/workflows/node-ci/badge.svg)](https://github.com/buruhin/frontend-project-lvl1/actions)
 
 [Asciinema brain even](https://asciinema.org/a/MSRjiCshxjQR10zECXBifM1sA)
-test
