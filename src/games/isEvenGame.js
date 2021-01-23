@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import {
-  GAME_LENGTH, getName, getRandomInt, isEven,
+  GAME_LENGTH, getName, getRandomInt, isEven, checkResult,
 } from '../index.js';
 
 export default () => {
@@ -11,12 +11,10 @@ export default () => {
     const number = getRandomInt(100);
     const userAnswer = readlineSync.question(`Question: ${number} `);
     const rightAnswer = isEven(number);
-    if (rightAnswer === userAnswer) {
+    const isRight = checkResult(username, rightAnswer, userAnswer);
+    if (isRight) {
       counter += 1;
-      console.log('Correct!');
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.`);
-      console.log(`Let's try again, ${username}!`);
       return;
     }
   }

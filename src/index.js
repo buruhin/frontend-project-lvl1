@@ -29,3 +29,13 @@ export const getExpression = () => {
     }
   }
 };
+
+export const checkResult = (username, rightAnswer, userAnswer) => {
+  if (rightAnswer === userAnswer) {
+    console.log('Correct!');
+    return true;
+  }
+  console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.`);
+  console.log(`Let's try again, ${username}!`);
+  return false;
+};

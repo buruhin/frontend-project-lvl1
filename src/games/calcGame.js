@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
-import { GAME_LENGTH, getName, getExpression } from '../index.js';
+import {
+  GAME_LENGTH, getName, getExpression, checkResult,
+} from '../index.js';
 
 export default () => {
   const username = getName();
@@ -10,12 +12,10 @@ export default () => {
     console.log(`Question: ${expression[0]}`);
     const userAnswer = readlineSync.question('Your answer: ');
     const rightAnswer = expression[1];
-    if (rightAnswer === Number(userAnswer)) {
+    const isRight = checkResult(username, rightAnswer, Number(userAnswer));
+    if (isRight) {
       counter += 1;
-      console.log('Correct!');
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.`);
-      console.log(`Let's try again, ${username}!`);
       return;
     }
   }
