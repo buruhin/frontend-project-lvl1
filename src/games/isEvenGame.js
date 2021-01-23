@@ -1,7 +1,9 @@
 import readlineSync from 'readline-sync';
 import {
-  GAME_LENGTH, getName, getRandomInt, isEven, checkResult,
+  GAME_LENGTH, getName, getRandomInt, checkResult,
 } from '../index.js';
+
+const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
 export default () => {
   const username = getName();
