@@ -1,5 +1,5 @@
 install: # запуск
-		npm install
+		npm ci
 
 brain-games: # запуск утилиты
 		node bin/brain-games.js
