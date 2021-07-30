@@ -13,6 +13,9 @@ brain-calc: # запуск утилиты
 brain-gcd: # запуск утилиты
 		node bin/brain-gcd.js
 
+brain-progression: # запуск утилиты
+		node bin/brain-progression.js
+
 publish:  # тестирование публикации пакета
 		npm publish --dry-run
 
