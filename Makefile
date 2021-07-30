@@ -16,6 +16,9 @@ brain-gcd: # запуск утилиты
 brain-progression: # запуск утилиты
 		node bin/brain-progression.js
 
+brain-prime: # запуск утилиты
+		node bin/brain-prime.js
+
 publish:  # тестирование публикации пакета
 		npm publish --dry-run
 
