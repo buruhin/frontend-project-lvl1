@@ -12,7 +12,7 @@ export default () => {
     const x = getRandomInt(3) + 1;
     const position = getRandomInt(10);
     const numbers = [];
-    for (let i = 0; i < 11; i += 1) {
+    for (let i = 0; i < 10; i += 1) {
       const newNumber = firstNumber + x;
       numbers[i] = newNumber;
       firstNumber = newNumber;
