@@ -19,7 +19,7 @@ export default () => {
     }
     const rightAnswer = numbers[position];
     numbers[position] = '..';
-    console.log(`Question: ${numbers}`);
+    console.log(`Question: ${numbers.join(' ')}`);
     const userAnswer = readlineSync.question('Your answer: ');
     const isRight = checkResult(username, rightAnswer, Number(userAnswer));
     if (isRight) {
