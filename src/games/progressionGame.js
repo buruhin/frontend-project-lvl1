@@ -18,7 +18,7 @@ export default () => {
       firstNumber = newNumber;
     }
     const rightAnswer = numbers[position];
-    numbers[position] = '...';
+    numbers[position] = '..';
     console.log(`Question: ${numbers}`);
     const userAnswer = readlineSync.question('Your answer: ');
     const isRight = checkResult(username, rightAnswer, Number(userAnswer));
